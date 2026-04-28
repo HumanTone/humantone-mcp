@@ -1,0 +1,50 @@
+{
+  "name": "humantone-mcp",
+  "version": "0.0.1",
+  "description": "Official Model Context Protocol server for HumanTone. Humanize AI-generated text and check AI likelihood directly from Claude Desktop, Cursor, Cline, and other MCP clients.",
+  "keywords": [
+    "humantone",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-desktop",
+    "cursor",
+    "cline",
+    "ai",
+    "humanize",
+    "ai-humanizer",
+    "ai-detector",
+    "anthropic"
+  ],
+  "homepage": "https://humantone.io/docs/mcp/",
+  "bugs": "https://github.com/humantone/humantone-mcp/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humantone/humantone-mcp.git"
+  },
+  "license": "MIT",
+  "author": "HumanTone <dev@humantone.io>",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": {
+    "humantone-mcp": "index.js"
+  },
+  "scripts": {
+    "test": "node --check index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "humantone": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
