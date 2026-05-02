@@ -10,7 +10,7 @@ const {
 const { HumanTone, HumanToneError } = require('humantone');
 
 const NAME = 'humantone';
-const VERSION = '0.0.1';
+const VERSION = '0.0.2';
 const API_KEY_REGEX = /^ht_[0-9a-f]{64}$/;
 
 // --------------------------------------------------------------------
@@ -236,6 +236,8 @@ function mapError(err, toolName) {
       );
     case 'invalid_response':
       return errorResult('Unexpected response from HumanTone. Please retry in a few seconds.');
+    case 'invalid_response_shape':
+      return errorResult('Unexpected response shape from HumanTone. Please retry in a few seconds.');
     default:
       return errorResult(`Unexpected error from HumanTone: ${msg || 'unknown error'}`);
   }

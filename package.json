@@ -1,6 +1,6 @@
 {
   "name": "humantone-mcp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Official Model Context Protocol server for HumanTone. Humanize AI-generated text and check AI likelihood directly from Claude Desktop, Cursor, Cline, and other MCP clients.",
   "keywords": [
     "humantone",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "humantone": "^0.0.1"
+    "humantone": "^0.0.2"
   },
   "publishConfig": {
     "access": "public"
