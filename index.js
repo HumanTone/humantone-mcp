@@ -172,12 +172,12 @@ function mapError(err, toolName) {
       return errorResult(
         'Your HumanTone plan does not include API access. View plans at ' +
           'https://humantone.io/pricing/ or manage your plan at ' +
-          'https://app.humantone.io/settings/plan'
+          'https://humantone.io/dashboard/settings/plan'
       );
     case 'insufficient_credits':
       return errorResult(
         'Not enough HumanTone credits. Buy Extra Credits at ' +
-          'https://app.humantone.io/settings/credits or wait for your monthly reset.'
+          'https://humantone.io/dashboard/settings/credits or wait for your monthly reset.'
       );
     case 'daily_limit_exceeded': {
       const seconds =
@@ -205,7 +205,7 @@ function mapError(err, toolName) {
         if (msg.includes('exceeds the maximum')) {
           return errorResult(
             "Text exceeds your plan's word limit. Split the input into smaller chunks, " +
-              'or upgrade your plan at https://app.humantone.io/settings/plan'
+              'or upgrade your plan at https://humantone.io/dashboard/settings/plan'
           );
         }
       }
@@ -302,7 +302,7 @@ async function main() {
   if (!apiKey || !API_KEY_REGEX.test(apiKey)) {
     process.stderr.write(
       'humantone-mcp: HUMANTONE_API_KEY env var is missing or invalid. ' +
-        'Get a key at https://app.humantone.io/settings/api\n'
+        'Get a key at https://humantone.io/dashboard/settings/api\n'
     );
     process.exit(1);
   }

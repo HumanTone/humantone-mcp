@@ -10,7 +10,7 @@ Early release (v0.0.x). Track updates on [GitHub](https://github.com/humantone/h
 
 - Node.js 18 or later.
 - A paid HumanTone plan with API access. Free trial accounts cannot use the API.
-- An API key from [app.humantone.io/settings/api](https://app.humantone.io/settings/api).
+- An API key from [app.humantone.io/settings/api](https://humantone.io/dashboard/settings/api).
 
 ## Installation
 
@@ -119,7 +119,7 @@ Once configured, talk to your assistant naturally. Mentioning `humantone` or spe
 ## Troubleshooting
 
 - **Tools do not appear in the assistant.** Confirm the JSON config has no syntax errors, then fully quit and reopen the client. A window refresh is not enough.
-- **"Invalid API key format" error.** Keys are 67 characters: `ht_` followed by 64 hex characters. Generate a new one at [app.humantone.io/settings/api](https://app.humantone.io/settings/api) if unsure.
+- **"Invalid API key format" error.** Keys are 67 characters: `ht_` followed by 64 hex characters. Generate a new one at [app.humantone.io/settings/api](https://humantone.io/dashboard/settings/api) if unsure.
 - **"Plan does not include API access" error.** Free trial accounts cannot use the API. View paid plans at [humantone.io/pricing](https://humantone.io/pricing/).
 - **"npx: command not found".** Install Node.js 18 or later from [nodejs.org](https://nodejs.org).
 
@@ -128,7 +128,7 @@ Once configured, talk to your assistant naturally. Mentioning `humantone` or spe
 - MCP setup guide for more clients: https://humantone.io/docs/mcp/
 - API docs: https://humantone.io/docs/api/
 - HumanTone Node SDK (used by this server): https://www.npmjs.com/package/humantone
-- Get an API key: https://app.humantone.io/settings/api
+- Get an API key: https://humantone.io/dashboard/settings/api
 - Issues: https://github.com/humantone/humantone-mcp/issues
 - Author email: dev@humantone.io
 - Product support: help@humantone.io
